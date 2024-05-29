@@ -1,0 +1,26 @@
+.sep {
+   display: flex;
+    font-size: 100px;
+    margin-top: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.id {
+    margin: auto;
+    text-align: center;
+}
+
+.text {
+    background: url(/cats-5888277_960_720.webp) no-repeat;
+    background-color: red;
+    text-align: center;
+    margin: auto;
+    background-position: center;
+    background-size: 70%;
+}
+
+.txt {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
