@@ -3,6 +3,11 @@ function time()
 {   
     let clock = new Date();
     let hbd = new Date("2024,7,19");
+    hbd.setFullYear(clock.getFullYear())
+    if(hbd-clock < 0)
+        {
+            hbd.setFullYear(hbd.getFullYear()+1)
+        }
     let display = hbd-clock;
     const d =1000*60*60*24;
     const hr =  1000*60*60;
@@ -16,7 +21,7 @@ function time()
     document.getElementById("p2").innerHTML = hour;
     document.getElementById("p3").innerHTML = minute;
     document.getElementById("p4").innerHTML = second;
-    document.getElementById("display").innerHTML = day + " day " + hour + " hrs " + minute + " min "
+    //document.getElementById("display").innerHTML = day + " day " + hour + " hrs " + minute + " min "
 }
 
 time()
